@@ -1,12 +1,13 @@
 CC = gcc
 CFLAGS = -Wall -g -Iinclude
-LDFLAGS =
+LDFLAGS = include
 
 all: folders server client
 
 server: bin/orchestrator
 
 client: bin/client
+
 folders:
 		@mkdir -p src include obj bin tmp
 
